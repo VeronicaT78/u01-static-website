@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="description"
+      content="Cafe_90 ett fik med 
+      gott kaffe och cupcakes"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Café_90</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!--chose class for easy styling and centering-->
+      <h1 tabindex="0">Café_90</h1>
+    </header>
+
+    <nav class="navbar" id="myTopnav">
+      <a href="#home">Hem</a>
+      <a href="#cafe">Café</a>
+      <a href="#menu">Meny</a>
+      <a href="#recipe">Recept</a>
+      <a href="#order">Beställ</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Information<i class="fa fa-caret-down"></i>
+          <!--dropdown med pil-->
+        </button>
+        <div class="dropdown-content">
+          <a href="#open">Öppettider</a>
+          <a href="#contact">Kontakt</a>
+          <a href="#map">Hitta hit</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!--choose no heading because of styling-->
+      <section class="cafe">
+        <p>
+          Gå en sväng utmed strandpromenaden vid Tollare Kaj så hittar du oss
+          längst bort i hörnet. Vi har en rofylld utsikt över Lännersta sundet.
+          Här serverar vi klassiker som räksmörgås, cookies och cupcakes i alla
+          smaker. En slät kopp kaffe eller en latte att dricka. Ni kan beställa
+          smörgåstårtor eller cupcakes till festen eller kalaset från vår fina
+          kallskänk.
+          <br />
+          <br />
+          Slå er ner för en stunds vila från det dagliga bruset i våra sköna
+          soffor.
+        </p>
+      </section>
+      <!--choose no heading because of styling-->
+      <section class="container">
+        <img
+          class="image"
+          src="files/BeFunky-collage.jpg"
+          alt="kaffe, cupcakes och smörgås"
+        />
+        <div class="overlay">
+          <div class="overlaytext">
+            Öppetider: mån-fre 10-19<br />
+            lör-sön 10-17<br />
+            Adress: Cafevägen 90<br />
+            132 49 Saltsjö Boo
+          </div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <ul style="list-style-type: none">
+          <li><h2>Dryck</h2></li>
+          <li>Kaffe</li>
+          <li>Latte</li>
+          <li>Cappucino</li>
+          <li>Te</li>
+          <li>Läsk</li>
+          <li>Juice</li>
+          <li><h2>Fika</h2></li>
+          <li>Cupcakes</li>
+          <li>Rulltårta</li>
+          <li>Cookies</li>
+          <li>Paj</li>
+          <li>Småkakor</li>
+          <li>Frukt</li>
+          <li><h2>Äta</h2></li>
+          <li>Räksmörgås</li>
+          <li>Valbart: ost/skinka, skaldjur, kyckling</li>
+          <li>Toast</li>
+          <li>Foccacia</li>
+          <li>Sallad</li>
+          <li>Baguette</li>
+        </ul>
+      </section>
+
+      <h2>Recept</h2>
+      <section id="recipe">
+        <embed
+          src="./files/Recept.pdf#toolbar=0&view=FitH"
+          type="application/pdf"
+          class="recipepdf"
+        />
+      </section>
+      <!--choose no heading because of styling-->
+      <section>
+        <embed
+          type="video/mp4"
+          src="files/coverr-mixing-dough-1572167121210.mp4"
+          aria-label="Vispar smet med ballonvisp"
+        />
+      </section>
+
+      <section id="order">
+        <form
+          action="mailto:cafe_90@outlook.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <h2>Beställning:</h2>
+          <label for="fname">Namn:</label>
+          <input type="text" id="fname" name="name" />
+          <br />
+          <br />
+          <label for="lname">Efternamn:</label>
+          <input type="text" id="lname" name="lname" />
+          <br />
+          <br />
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" />
+          <br />
+          <br />
+          <label for="phone">Telefonnummer:</label>
+          <input type="tel" id="phone" name="phone" />
+          <br />
+          <br />
+          <label for="date">Datum för leverans:</label>
+          <input type="date" id="date" name="date" />
+          <br />
+          <br />
+          <p>Smörgåstårta rostbiff. 79 kr per portion. Mimimum 6 portioner.</p>
+          <label for="quantity">Antal portioner:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="rostbiff"
+            min="6"
+            max="200"
+          />
+          <p>Smörgåstårta räkor. 79 kr per portion. Mimimum 6 portioner.</p>
+          <label for="quantity2">Antal portioner:</label>
+          <input type="number" id="quantity2" name="rakor" min="6" max="200" />
+          <!--needed to specify ids differently to tell them apart-->
+          <p>
+            Order minimum 6 portioner. Leverans klar kl. 09.00 beställt datum.
+            Order läggs senast 48 timmar innan.
+          </p>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section id="info">
+        <h3 id="open">Öppettider:</h3>
+        <p>Mån - Fre 10-19</p>
+        <p>Lör - Sön 10-17</p>
+        <br />
+        <h3 id="contact">Kontakta oss:</h3>
+        <p>Mail:<a href="mailto:cafe_90@gmail.com">cafe_90@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+46704878565">0704 878565</a></p>
+        <br />
+        <h3 id="map">Hitta hit:</h3>
+        <p>Cafevägen 90</p>
+        <p>132 49 Saltsjö-Boo</p>
+        <a href="https://goo.gl/maps/cVxmswp5MbFadkiF7">Karta</a>
+      </section>
+    </main>
+    <footer>
+      <p>Välkommen in på en fika!</p>
+    </footer>
+  </body>
+</html>
